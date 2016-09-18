@@ -13,7 +13,7 @@ public class GroupCreationTests {
     FirefoxDriver wd;
     
     @BeforeMethod
-    public void setUp(String username) throws Exception {
+    public void setUp() throws Exception {
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/group.php");
