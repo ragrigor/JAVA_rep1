@@ -1,4 +1,4 @@
-package first.test;
+package ru.web.adressbook;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -20,7 +20,7 @@ public class ContactCreationTests {
         login("admin", "secret");
 
     }
-9
+
     private void login(String username, String password) {
         wd.findElement(By.name("user")).click();
         wd.findElement(By.name("user")).clear();
