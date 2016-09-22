@@ -1,4 +1,4 @@
-package ru.web.adressbook;
+package ru.web.adressbook.model;
 
 public class GroupData {
     private final String name1;

@@ -1,4 +1,4 @@
-package ru.web.adressbook;
+package ru.web.adressbook.model;
 
 public class ContactData {
     private final String name1;
