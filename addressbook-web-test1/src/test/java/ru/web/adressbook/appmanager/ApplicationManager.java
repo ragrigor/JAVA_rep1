@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.BrowserType;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-import static org.openqa.selenium.remote.BrowserType.FIREFOX;
+
 
 
 public class ApplicationManager {
