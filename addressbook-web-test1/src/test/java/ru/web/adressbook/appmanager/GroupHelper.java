@@ -2,7 +2,10 @@ package ru.web.adressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import ru.web.adressbook.model.GroupData;
+
+import java.util.List;
 
 /**
  * Created by Радочка on 22.09.2016.
@@ -60,5 +63,9 @@ public class GroupHelper  extends HelperBase{
 
     public boolean isThereAGroup() {
         return isElementPresent(By.xpath("//input[@name='selected[]']"));
+    }
+
+    public int getGroupCount() {
+        return wd.findElements(By.xpath("//input[@name='selected[]']")).size();
     }
 }

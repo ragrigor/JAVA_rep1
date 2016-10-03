@@ -1,5 +1,6 @@
 package ru.web.adressbook.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.web.adressbook.model.GroupData;
 
@@ -9,7 +10,10 @@ public class GroupCreationTests extends TestBase {
     public void testGroupCreation() {
 
         app.getNavigationHelper().gotoGroupPage();
-        app.getGroupHelper().createGroup(new GroupData("group1", "test1", "test2"));
+        int before = app.getGroupHelper().getGroupCount();
+        app.getGroupHelper().createGroup(new GroupData("group2", "test2", "test22"));
+        int after = app.getGroupHelper().getGroupCount();
+        Assert.assertEquals(after, before +1);
 
 
     }
