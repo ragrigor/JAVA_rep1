@@ -22,4 +22,27 @@ public class GroupData {
     public String getName3() {
         return name3;
     }
+
+    @Override
+    public String toString() {
+        return "GroupData{" +
+                "name1='" + name1 + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        GroupData groupData = (GroupData) o;
+
+        return name1 != null ? name1.equals(groupData.name1) : groupData.name1 == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return name1 != null ? name1.hashCode() : 0;
+    }
 }
