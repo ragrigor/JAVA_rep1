@@ -1,28 +1,27 @@
 package ru.web.adressbook.model;
 
 public class GroupData {
-    private final String id;
+    private int id;
     private final String name1;
     private final String name2;
     private final String name3;
 
 
-    public GroupData(String id, String name1, String name2, String name3) {
+    public GroupData(int id, String name1, String name2, String name3) {
         this.id = id;
-
         this.name1 = name1;
         this.name2 = name2;
         this.name3 = name3;
     }
 
     public GroupData(String name1, String name2, String name3) {
-        this.id = null;
+        this.id = 0;
         this.name1 = name1;
         this.name2 = name2;
         this.name3 = name3;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
     public String getName1() {
@@ -40,7 +39,7 @@ public class GroupData {
     @Override
     public String toString() {
         return "GroupData{" +
-                "id='" + id + '\'' +
+                "id=" + id +
                 ", name1='" + name1 + '\'' +
                 '}';
     }
@@ -52,15 +51,20 @@ public class GroupData {
 
         GroupData groupData = (GroupData) o;
 
-        if (id != null ? !id.equals(groupData.id) : groupData.id != null) return false;
+        if (id != groupData.id) return false;
         return name1 != null ? name1.equals(groupData.name1) : groupData.name1 == null;
 
     }
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
+        int result = id;
         result = 31 * result + (name1 != null ? name1.hashCode() : 0);
         return result;
+    }
+
+
+    public void setID(int id) {
+        this.id = id;
     }
 }
