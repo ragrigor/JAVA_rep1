@@ -40,9 +40,8 @@ public class GroupHelper  extends HelperBase{
 
     }
 
-    public void selectGroup() {
-
-        click(By.xpath("//input[@name='selected[]']"));
+    public void selectGroup(int index) {
+        wd.findElements(By.xpath("//input[@name='selected[]']")).get(index).click();
     }
 
     public void initGroupModification() {
