@@ -52,4 +52,31 @@ public class ContactData {
     public String getPhone3() {
         return phone3;
     }
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "name1='" + name1 + '\'' +
+                ", name2='" + name2 + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ContactData that = (ContactData) o;
+
+        if (name1 != null ? !name1.equals(that.name1) : that.name1 != null) return false;
+        return name2 != null ? name2.equals(that.name2) : that.name2 == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name1 != null ? name1.hashCode() : 0;
+        result = 31 * result + (name2 != null ? name2.hashCode() : 0);
+        return result;
+    }
 }
