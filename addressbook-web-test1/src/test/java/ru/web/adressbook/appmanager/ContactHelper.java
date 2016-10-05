@@ -50,7 +50,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void initContactModification(){
-        click(By.xpath("//table[@id='maintable']/tbody/tr[5]/td[8]/a/img"));
+        click(By.xpath("//tr[@class='odd']/td[8]/a/img"));
     }
 
     public void submitContactModification(){
@@ -67,5 +67,9 @@ public class ContactHelper extends HelperBase {
         fillContactForm(contact);
         submitContactCreation();
         returntoContactPage();
+    }
+
+    public int getContactCount() {
+        return wd.findElements(By.xpath("//input[@name='selected[]']")).size();
     }
 }
