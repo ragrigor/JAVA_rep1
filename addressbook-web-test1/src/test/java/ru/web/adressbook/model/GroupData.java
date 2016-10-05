@@ -15,7 +15,7 @@ public class GroupData {
     }
 
     public GroupData(String name1, String name2, String name3) {
-        this.id = 0;
+        this.id = Integer.MAX_VALUE;
         this.name1 = name1;
         this.name2 = name2;
         this.name3 = name3;
@@ -51,18 +51,14 @@ public class GroupData {
 
         GroupData groupData = (GroupData) o;
 
-        if (id != groupData.id) return false;
         return name1 != null ? name1.equals(groupData.name1) : groupData.name1 == null;
 
     }
 
     @Override
     public int hashCode() {
-        int result = id;
-        result = 31 * result + (name1 != null ? name1.hashCode() : 0);
-        return result;
+        return name1 != null ? name1.hashCode() : 0;
     }
-
 
     public void setID(int id) {
         this.id = id;
