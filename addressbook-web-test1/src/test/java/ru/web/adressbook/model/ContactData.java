@@ -24,7 +24,7 @@ public class ContactData {
     }
 
     public ContactData(String name1, String name2, String address, String mail1, String mail2, String phone1, String phone2, String phone3) {
-        this.id = 0;
+        this.id = Integer.MAX_VALUE;
         this.name1 = name1;
         this.name2 = name2;
         this.address = address;
@@ -91,7 +91,6 @@ public class ContactData {
 
         ContactData that = (ContactData) o;
 
-        if (id != that.id) return false;
         if (name1 != null ? !name1.equals(that.name1) : that.name1 != null) return false;
         return name2 != null ? name2.equals(that.name2) : that.name2 == null;
 
@@ -99,8 +98,7 @@ public class ContactData {
 
     @Override
     public int hashCode() {
-        int result = id;
-        result = 31 * result + (name1 != null ? name1.hashCode() : 0);
+        int result = name1 != null ? name1.hashCode() : 0;
         result = 31 * result + (name2 != null ? name2.hashCode() : 0);
         return result;
     }
