@@ -10,8 +10,11 @@ public class ContactData {
     private final String phone1;
     private final String phone2;
     private final String phone3;
+    private final String bDay;
+    private final String bMonth;
+    private final String bYear;
 
-    public ContactData(int id, String name1, String name2, String address, String mail1, String mail2, String phone1, String phone2, String phone3) {
+    public ContactData(int id, String name1, String name2, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String bDay, String bMonth, String bYear) {
         this.id = id;
         this.name1 = name1;
         this.name2 = name2;
@@ -21,9 +24,13 @@ public class ContactData {
         this.phone1 = phone1;
         this.phone2 = phone2;
         this.phone3 = phone3;
+        this.bDay = bDay;
+        this.bMonth = bMonth;
+        this.bYear = bYear;
     }
 
-    public ContactData(String name1, String name2, String address, String mail1, String mail2, String phone1, String phone2, String phone3) {
+    public ContactData(String name1, String name2, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String bDay, String bMonth, String bYear) {
+        this.bYear = bYear;
         this.id = Integer.MAX_VALUE;
         this.name1 = name1;
         this.name2 = name2;
@@ -33,6 +40,8 @@ public class ContactData {
         this.phone1 = phone1;
         this.phone2 = phone2;
         this.phone3 = phone3;
+        this.bDay = bDay;
+        this.bMonth = bMonth;
     }
 
     public int getId() {
@@ -73,6 +82,18 @@ public class ContactData {
 
     public String getPhone3() {
         return phone3;
+    }
+
+    public String getbDay() {
+        return bDay;
+    }
+
+    public String getbMonth() {
+        return bMonth;
+    }
+
+    public String getbYear() {
+        return bYear;
     }
 
     @Override
