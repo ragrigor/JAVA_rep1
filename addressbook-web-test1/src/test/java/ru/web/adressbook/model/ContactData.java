@@ -1,7 +1,7 @@
 package ru.web.adressbook.model;
 
 public class ContactData {
-    private final String id;
+    private  int id;
     private final String name1;
     private final String name2;
     private final String address;
@@ -11,7 +11,7 @@ public class ContactData {
     private final String phone2;
     private final String phone3;
 
-    public ContactData(String id, String name1, String name2, String address, String mail1, String mail2, String phone1, String phone2, String phone3) {
+    public ContactData(int id, String name1, String name2, String address, String mail1, String mail2, String phone1, String phone2, String phone3) {
         this.id = id;
         this.name1 = name1;
         this.name2 = name2;
@@ -24,7 +24,7 @@ public class ContactData {
     }
 
     public ContactData(String name1, String name2, String address, String mail1, String mail2, String phone1, String phone2, String phone3) {
-        this.id = null;
+        this.id = 0;
         this.name1 = name1;
         this.name2 = name2;
         this.address = address;
@@ -35,8 +35,12 @@ public class ContactData {
         this.phone3 = phone3;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName1() {
@@ -74,7 +78,7 @@ public class ContactData {
     @Override
     public String toString() {
         return "ContactData{" +
-                "id='" + id + '\'' +
+                "id=" + id +
                 ", name1='" + name1 + '\'' +
                 ", name2='" + name2 + '\'' +
                 '}';
@@ -87,7 +91,7 @@ public class ContactData {
 
         ContactData that = (ContactData) o;
 
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (id != that.id) return false;
         if (name1 != null ? !name1.equals(that.name1) : that.name1 != null) return false;
         return name2 != null ? name2.equals(that.name2) : that.name2 == null;
 
@@ -95,7 +99,7 @@ public class ContactData {
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
+        int result = id;
         result = 31 * result + (name1 != null ? name1.hashCode() : 0);
         result = 31 * result + (name2 != null ? name2.hashCode() : 0);
         return result;
