@@ -54,10 +54,10 @@ public class ContactHelper extends HelperBase {
         wd.switchTo().alert().accept();
     }
 
-    public void initContactModification(int index)
-    {
+    public void initContactModification(int index) {
+        index ++;
         //click(By.xpath("//*[@id='maintable']/tbody/tr[" + index + "]/td[8]/a/img"));
-        //wd.findElement(By.xpath("//tr[@name='entry'][" + index + "]//td[8]/a")).click();
+        click(By.xpath("//tr[@name='entry'][" + index + "]//td[8]/a"));
         //wd.findElements(By.name("entry")).get(index).findElements(By.tagName("td")).get(index).findElement(By.tagName("a")).click();
     }
 
@@ -82,7 +82,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public List<ContactData> getContactList() {
-        List<ContactData> contacts = new ArrayList<>();
+        List<ContactData> contacts = new ArrayList<ContactData>();
         List<WebElement> rows = wd.findElements(By.name("entry"));
         for (WebElement row : rows) {
             List<WebElement> cells = row.findElements(By.tagName("td"));
