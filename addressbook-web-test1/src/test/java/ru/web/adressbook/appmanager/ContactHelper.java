@@ -5,9 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import ru.web.adressbook.model.ContactData;
+import ru.web.adressbook.model.GroupData;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -63,6 +66,11 @@ public class ContactHelper extends HelperBase {
         wd.findElements(By.xpath("//input[@name='selected[]']")).get(index).click();
     }
 
+    public void selectContactById(int id) {
+        wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
+    }
+
+
     public void deleteSelectedContact(){
         click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
     }
@@ -72,9 +80,9 @@ public class ContactHelper extends HelperBase {
     }
 
     public void initContactModification(int index) {
-        index ++;
+     //   index ++;
         //click(By.xpath("//*[@id='maintable']/tbody/tr[" + index + "]/td[8]/a/img"));
-        click(By.xpath("//tr[@name='entry'][" + index + "]//td[8]/a"));
+       click(By.xpath("//tr[@name='entry'][" + index + "]//td[8]/a"));
         //wd.findElements(By.name("entry")).get(index).findElements(By.tagName("td")).get(index).findElement(By.tagName("a")).click();
     }
 
@@ -94,9 +102,9 @@ public class ContactHelper extends HelperBase {
         returntoContactPage();
     }
 
-    public void modify(int index, ContactData contact) {
-        selectContact(index);
-        initContactModification(index);
+    public void modify(ContactData contact) {
+        selectContactById(contact.getId());
+        initContactModification(contact.getId());
         fillContactForm(contact);
         submitContactModification();
     }
@@ -106,13 +114,33 @@ public class ContactHelper extends HelperBase {
         deleteSelectedContact();
         acceptDeletionSelectedContact();
     }
+    public void delete(ContactData contact) {
+        selectContactById(contact.getId());
+        deleteSelectedContact();
+        acceptDeletionSelectedContact();
+    }
+
+
 
     public int getContactCount() {
         return wd.findElements(By.xpath("//input[@name='selected[]']")).size();
     }
 
-    public List<ContactData> list() {
+   /* public List<ContactData> list() {
         List<ContactData> contacts = new ArrayList<ContactData>();
+        List<WebElement> rows = wd.findElements(By.name("entry"));
+        for (WebElement row : rows) {
+            List<WebElement> cells = row.findElements(By.tagName("td"));
+            String name1 = cells.get(2).getText();
+            int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
+            ContactData contact = new ContactData().withId(id).withFirstName(name1);
+            contacts.add(contact);
+        }
+        return contacts;
+    }  */
+
+    public Set<ContactData> all() {
+        Set<ContactData> contacts = new HashSet<ContactData>();
         List<WebElement> rows = wd.findElements(By.name("entry"));
         for (WebElement row : rows) {
             List<WebElement> cells = row.findElements(By.tagName("td"));
