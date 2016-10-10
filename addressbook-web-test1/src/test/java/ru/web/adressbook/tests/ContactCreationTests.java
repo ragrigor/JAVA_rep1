@@ -26,7 +26,7 @@ public class ContactCreationTests extends TestBase {
             }
         }  */
 
-        //contact.setId(after.stream().max((c1, c2) -> Integer.compare(c1.getId(), c2.getId())).get().getId());
+        //contact.withId(after.stream().max((c1, c2) -> Integer.compare(c1.getId(), c2.getId())).get().getId());
         before.add(contact);
         Comparator<? super ContactData> byId =  (c1, c2) -> Integer.compare(c1.getId(), c2.getId());
         before.sort(byId);

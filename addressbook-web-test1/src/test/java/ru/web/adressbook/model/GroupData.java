@@ -1,39 +1,59 @@
 package ru.web.adressbook.model;
 
 public class GroupData {
-    private int id;
-    private final String name1;
-    private final String name2;
-    private final String name3;
+    private int id = Integer.MAX_VALUE;;
+    private  String name1;
+    private  String header;
+    private  String footer;
 
 
-    public GroupData(int id, String name1, String name2, String name3) {
+   /* public GroupData(int id, String name1, String header, String footer) {
         this.id = id;
         this.name1 = name1;
-        this.name2 = name2;
-        this.name3 = name3;
+        this.header = header;
+        this.footer = footer;
     }
 
-    public GroupData(String name1, String name2, String name3) {
+    public GroupData(String name1, String header, String footer) {
         this.id = Integer.MAX_VALUE;
         this.name1 = name1;
-        this.name2 = name2;
-        this.name3 = name3;
-    }
+        this.header = header;
+        this.footer = footer;
+    }  */
 
     public int getId() {
         return id;
+    }
+
+    public GroupData withId(int id) {
+        this.id = id;
+        return this;
     }
     public String getName1() {
         return name1;
     }
 
-    public String getName2() {
-        return name2;
+    public GroupData withName1(String name1) {
+        this.name1 = name1;
+        return this;
     }
 
-    public String getName3() {
-        return name3;
+    public GroupData withHeader(String header) {
+        this.header = header;
+        return this;
+    }
+
+    public GroupData withFooter(String footer) {
+        this.footer = footer;
+        return this;
+    }
+
+    public String getHeader() {
+        return header;
+    }
+
+    public String getFooter() {
+        return footer;
     }
 
     @Override
@@ -60,7 +80,5 @@ public class GroupData {
         return name1 != null ? name1.hashCode() : 0;
     }
 
-    public void setID(int id) {
-        this.id = id;
-    }
+
 }
