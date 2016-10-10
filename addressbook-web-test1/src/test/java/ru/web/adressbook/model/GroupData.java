@@ -71,14 +71,15 @@ public class GroupData {
 
         GroupData groupData = (GroupData) o;
 
+        if (id != groupData.id) return false;
         return name1 != null ? name1.equals(groupData.name1) : groupData.name1 == null;
 
     }
 
     @Override
     public int hashCode() {
-        return name1 != null ? name1.hashCode() : 0;
+        int result = id;
+        result = 31 * result + (name1 != null ? name1.hashCode() : 0);
+        return result;
     }
-
-
 }
