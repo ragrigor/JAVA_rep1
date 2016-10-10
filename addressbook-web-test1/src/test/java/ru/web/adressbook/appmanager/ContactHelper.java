@@ -21,8 +21,8 @@ public class ContactHelper extends HelperBase {
     }
 
     public void fillContactForm(ContactData contactData) {
-        type(By.name("firstname"), contactData.getName1());
-        type(By.name("lastname"), contactData.getName2());
+        type(By.name("firstname"), contactData.getFirstName());
+        type(By.name("lastname"), contactData.getLastName());
         type(By.name("address"), contactData.getAddress());
         type(By.name("email"), contactData.getMail1());
         type(By.name("email2"), contactData.getMail2());
@@ -118,7 +118,7 @@ public class ContactHelper extends HelperBase {
             List<WebElement> cells = row.findElements(By.tagName("td"));
             String name1 = cells.get(2).getText();
             int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
-            ContactData contact = new ContactData(id, name1, null, null, null, null, null, null, null, null, null, null);
+            ContactData contact = new ContactData().withId(id).withFirstName(name1);
             contacts.add(contact);
         }
         return contacts;

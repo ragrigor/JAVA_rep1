@@ -1,23 +1,23 @@
 package ru.web.adressbook.model;
 
 public class ContactData {
-    private  int id;
-    private final String name1;
-    private final String name2;
-    private final String address;
-    private final String mail1;
-    private final String mail2;
-    private final String phone1;
-    private final String phone2;
-    private final String phone3;
-    private final String bDay;
-    private final String bMonth;
-    private final String bYear;
+    private  int id = Integer.MAX_VALUE;
+    private  String firstName;
+    private  String lastName;
+    private  String address;
+    private  String mail1;
+    private  String mail2;
+    private  String phone1;
+    private  String phone2;
+    private  String phone3;
+    private  String bDay;
+    private  String bMonth;
+    private  String bYear;
 
-    public ContactData(int id, String name1, String name2, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String bDay, String bMonth, String bYear) {
+ /*   public ContactData(int id, String firstName, String lastName, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String bDay, String bMonth, String bYear) {
         this.id = id;
-        this.name1 = name1;
-        this.name2 = name2;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.address = address;
         this.mail1 = mail1;
         this.mail2 = mail2;
@@ -29,11 +29,11 @@ public class ContactData {
         this.bYear = bYear;
     }
 
-    public ContactData(String name1, String name2, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String bDay, String bMonth, String bYear) {
+    public ContactData(String firstName, String lastName, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String bDay, String bMonth, String bYear) {
         this.bYear = bYear;
         this.id = Integer.MAX_VALUE;
-        this.name1 = name1;
-        this.name2 = name2;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.address = address;
         this.mail1 = mail1;
         this.mail2 = mail2;
@@ -42,22 +42,78 @@ public class ContactData {
         this.phone3 = phone3;
         this.bDay = bDay;
         this.bMonth = bMonth;
-    }
+    }   */
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public ContactData withId(int id) {
         this.id = id;
+        return this;
     }
 
-    public String getName1() {
-        return name1;
+    public ContactData withFirstName(String firstName) {
+        this.firstName = firstName;
+        return this;
     }
 
-    public String getName2() {
-        return name2;
+    public ContactData withLastName(String lastName) {
+        this.lastName = lastName;
+        return this;
+    }
+
+    public ContactData withAddress(String address) {
+        this.address = address;
+        return this;
+    }
+
+    public ContactData withMail1(String mail1) {
+        this.mail1 = mail1;
+        return this;
+    }
+
+    public ContactData withMail2(String mail2) {
+        this.mail2 = mail2;
+        return this;
+    }
+
+    public ContactData withPhone1(String phone1) {
+        this.phone1 = phone1;
+        return this;
+    }
+
+    public ContactData withPhone2(String phone2) {
+        this.phone2 = phone2;
+        return this;
+    }
+
+    public ContactData withPhone3(String phone3) {
+        this.phone3 = phone3;
+        return this;
+    }
+
+    public ContactData withBDay(String bDay) {
+        this.bDay = bDay;
+        return this;
+    }
+
+    public ContactData withBMonth(String bMonth) {
+        this.bMonth = bMonth;
+        return this;
+    }
+
+    public ContactData withBYear(String bYear) {
+        this.bYear = bYear;
+        return this;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public String getAddress() {
@@ -100,8 +156,8 @@ public class ContactData {
     public String toString() {
         return "ContactData{" +
                 "id=" + id +
-                ", name1='" + name1 + '\'' +
-                ", name2='" + name2 + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 '}';
     }
 
@@ -112,15 +168,15 @@ public class ContactData {
 
         ContactData that = (ContactData) o;
 
-        if (name1 != null ? !name1.equals(that.name1) : that.name1 != null) return false;
-        return name2 != null ? name2.equals(that.name2) : that.name2 == null;
+        if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
+        return lastName != null ? lastName.equals(that.lastName) : that.lastName == null;
 
     }
 
     @Override
     public int hashCode() {
-        int result = name1 != null ? name1.hashCode() : 0;
-        result = 31 * result + (name2 != null ? name2.hashCode() : 0);
+        int result = firstName != null ? firstName.hashCode() : 0;
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         return result;
     }
 }
