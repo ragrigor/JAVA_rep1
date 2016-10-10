@@ -60,6 +60,12 @@ public class GroupHelper  extends HelperBase{
         submitGroupCreation();
         returntoGroupPage();
     }
+    public void modifyGroup(List<GroupData> before, GroupData group) {
+        selectGroup(before.size() - 1);
+        initGroupModification();
+        fillGroupForm(group);
+        submitGroupModification();
+    }
 
     public boolean isThereAGroup() {
         return isElementPresent(By.xpath("//input[@name='selected[]']"));
