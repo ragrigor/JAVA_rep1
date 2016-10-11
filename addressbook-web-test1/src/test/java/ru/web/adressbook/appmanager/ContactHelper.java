@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import ru.web.adressbook.model.ContactData;
+import ru.web.adressbook.model.Contacts;
 import ru.web.adressbook.model.GroupData;
 
 import java.util.ArrayList;
@@ -146,8 +147,8 @@ public class ContactHelper extends HelperBase {
         return contacts;
     }  */
 
-    public Set<ContactData> all() {
-        Set<ContactData> contacts = new HashSet<ContactData>();
+    public Contacts all() {
+        Contacts contacts = new Contacts();
         List<WebElement> rows = wd.findElements(By.name("entry"));
         for (WebElement row : rows) {
             List<WebElement> cells = row.findElements(By.tagName("td"));
