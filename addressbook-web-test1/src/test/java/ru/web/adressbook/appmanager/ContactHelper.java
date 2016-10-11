@@ -79,10 +79,17 @@ public class ContactHelper extends HelperBase {
         wd.switchTo().alert().accept();
     }
 
-    public void initContactModification(int index) {
+    public void initContactModification(int id) {
      //   index ++;
         //click(By.xpath("//*[@id='maintable']/tbody/tr[" + index + "]/td[8]/a/img"));
-       click(By.xpath("//tr[@name='entry'][" + index + "]//td[8]/a"));
+       //click(By.xpath("//tr[@name='entry'][" + index + "]//td[8]/a"));
+       // click(By.xpath("./../..//td[8]/a"));
+        //WebElement row = wd.findElement(By.cssSelector("input[value='" + id + "']"));
+        WebElement checkbox = wd.findElement(By.cssSelector("input[value='" + id + "']"));
+        WebElement row = checkbox.findElement(By.xpath("./../.."));
+        row.findElement(By.xpath("./td[8]/a")).click();
+
+
         //wd.findElements(By.name("entry")).get(index).findElements(By.tagName("td")).get(index).findElement(By.tagName("a")).click();
     }
 

@@ -25,7 +25,7 @@ public class ContactModificationTests extends TestBase{
 
            Set<ContactData> before = app.contact().all();
            ContactData modifiedContact = before.iterator().next();
-           ContactData contact = new ContactData().withId(modifiedContact.getId()).withFirstName("Test5a").withMail1("test22@gmail.com").withPhone1("456-444").withPhone2("456-555").withPhone3("456-666").withBDay("6").withBMonth("February").withBYear("2012");
+           ContactData contact = new ContactData().withId(modifiedContact.getId()).withFirstName("Test3").withMail1("test22@gmail.com").withPhone1("456-444").withPhone2("456-555").withPhone3("456-666").withBDay("6").withBMonth("February").withBYear("2012");
            app.contact().modify(contact);
            app.contact().returntoContactPage();
            Set<ContactData> after = app.contact().all();
