@@ -13,6 +13,18 @@ public class ContactData {
     private  String bDay;
     private  String bMonth;
     private  String bYear;
+    private  String allPhones;
+
+    public String getAllPhones() {
+        return allPhones;
+    }
+
+    public ContactData withAllPhones(String allPhones) {
+        this.allPhones = allPhones;
+        return this;
+    }
+
+
 
  /*   public ContactData(int id, String firstName, String lastName, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String bDay, String bMonth, String bYear) {
         this.id = id;
