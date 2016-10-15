@@ -11,11 +11,24 @@ public class ContactData {
     private  String phone1;
     private  String phone2;
     private  String phone3;
-    private  String bDay;
-    private  String bMonth;
-    private  String bYear;
+    private  String aDay;
+    private  String aMonth;
+    private  String aYear;
     private  String allPhones;
     private  String allMails;
+    private  String allDetails;
+
+    public String getAllDetails() {
+        return allDetails;
+    }
+
+    public ContactData withAllDetails(String allDetails) {
+        this.allDetails = allDetails;
+        return this;
+    }
+
+
+
 
     public String getAllMails() {
         return allMails;
@@ -37,7 +50,7 @@ public class ContactData {
 
 
 
- /*   public ContactData(int id, String firstName, String lastName, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String bDay, String bMonth, String bYear) {
+ /*   public ContactData(int id, String firstName, String lastName, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String aDay, String aMonth, String aYear) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -47,13 +60,13 @@ public class ContactData {
         this.phone1 = phone1;
         this.phone2 = phone2;
         this.phone3 = phone3;
-        this.bDay = bDay;
-        this.bMonth = bMonth;
-        this.bYear = bYear;
+        this.aDay = aDay;
+        this.aMonth = aMonth;
+        this.aYear = aYear;
     }
 
-    public ContactData(String firstName, String lastName, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String bDay, String bMonth, String bYear) {
-        this.bYear = bYear;
+    public ContactData(String firstName, String lastName, String address, String mail1, String mail2, String phone1, String phone2, String phone3, String aDay, String aMonth, String aYear) {
+        this.aYear = aYear;
         this.id = Integer.MAX_VALUE;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -63,8 +76,8 @@ public class ContactData {
         this.phone1 = phone1;
         this.phone2 = phone2;
         this.phone3 = phone3;
-        this.bDay = bDay;
-        this.bMonth = bMonth;
+        this.aDay = aDay;
+        this.aMonth = aMonth;
     }   */
 
     public int getId() {
@@ -125,18 +138,18 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withBDay(String bDay) {
-        this.bDay = bDay;
+    public ContactData withADay(String aDay) {
+        this.aDay = aDay;
         return this;
     }
 
-    public ContactData withBMonth(String bMonth) {
-        this.bMonth = bMonth;
+    public ContactData withAMonth(String aMonth) {
+        this.aMonth = aMonth;
         return this;
     }
 
-    public ContactData withBYear(String bYear) {
-        this.bYear = bYear;
+    public ContactData withAYear(String aYear) {
+        this.aYear = aYear;
         return this;
     }
 
@@ -172,16 +185,16 @@ public class ContactData {
         return phone3;
     }
 
-    public String getbDay() {
-        return bDay;
+    public String getaDay() {
+        return aDay;
     }
 
-    public String getbMonth() {
-        return bMonth;
+    public String getaMonth() {
+        return aMonth;
     }
 
-    public String getbYear() {
-        return bYear;
+    public String getaYear() {
+        return aYear;
     }
 
     @Override
@@ -212,4 +225,6 @@ public class ContactData {
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         return result;
     }
+
+
 }

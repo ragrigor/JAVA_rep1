@@ -6,12 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import ru.web.adressbook.model.ContactData;
 import ru.web.adressbook.model.Contacts;
-import ru.web.adressbook.model.GroupData;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -36,12 +32,12 @@ public class ContactHelper extends HelperBase {
         type(By.name("work"), contactData.getPhone3());
 
         Select bDay = new Select(wd.findElement(By.xpath("//div[@id='content']/form/select[3]")));
-        bDay.selectByVisibleText(contactData.getbDay());
+        bDay.selectByVisibleText(contactData.getaDay());
 
         Select bMonth = new Select(wd.findElement(By.xpath("//div[@id='content']/form/select[4]")));
-        bMonth.selectByVisibleText(contactData.getbMonth());
+        bMonth.selectByVisibleText(contactData.getaMonth());
 
-        type(By.name("ayear"), contactData.getbYear());
+        type(By.name("ayear"), contactData.getaYear());
 
         // Select selectBDay1 = new Select(By.xpath("//div[@id='content']/form/select[3]//option[" + index + "]")
         //type(By.xpath("//div[@id='content']/form/select[3]//option[3]"), null);
@@ -94,6 +90,12 @@ public class ContactHelper extends HelperBase {
 
 
         //wd.findElements(By.name("entry")).get(index).findElements(By.tagName("td")).get(index).findElement(By.tagName("a")).click();
+    }
+
+    public void viewProfileDetails(int id) {
+        WebElement checkbox = wd.findElement(By.cssSelector("input[value='" + id + "']"));
+        WebElement row = checkbox.findElement(By.xpath("./../.."));
+        row.findElement(By.xpath("./td[7]/a")).click();
     }
 
     public void submitContactModification() {
@@ -189,9 +191,19 @@ public class ContactHelper extends HelperBase {
         String homePhone = wd.findElement(By.name("home")).getAttribute("value");
         String mobilePhone = wd.findElement(By.name("mobile")).getAttribute("value");
         String workPhone = wd.findElement(By.name("work")).getAttribute("value");
+        String  aDay = wd.findElement(By.name("aday")).getAttribute("value");
+        String  aMonth = wd.findElement(By.name("amonth")).getAttribute("value");
+        String  aYear = wd.findElement(By.name("ayear")).getAttribute("value");
         wd.navigate().back();
         return new ContactData().withId(contact.getId()).withFirstName(firstName)
                 .withLastName(lastName).withAddress(address).withMail1(email).withMail2(email2).withMail3(email3)
-                .withPhone1(homePhone).withPhone2(mobilePhone).withPhone3(workPhone);
+                .withPhone1(homePhone).withPhone2(mobilePhone).withPhone3(workPhone).withADay(aDay).withAMonth(aMonth).withAYear(aYear);
+    }
+
+    public ContactData infoFromProfileFrom(ContactData contact) {
+        viewProfileDetails(contact.getId());
+        String allDetails = wd.findElement(By.id("content")).getText();
+        wd.navigate().back();
+        return new ContactData().withAllDetails(allDetails);
     }
 }
