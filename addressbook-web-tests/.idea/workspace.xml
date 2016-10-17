@@ -63,11 +63,11 @@
       <file leaf-file-name="GroupDataGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/generators/GroupDataGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="-121">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1053#1064#0" expanded="true" />
+                <element signature="e#1715#1726#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +76,18 @@
       <file leaf-file-name="groups.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/resources/groups.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -127,18 +137,6 @@
             <state relative-caret-position="51">
               <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactPhoneTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactPhoneTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="23" column="244" selection-start-line="23" selection-start-column="244" selection-end-line="23" selection-end-column="244" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -521,7 +519,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/../addressbook-web-test1" value="1476216935305" />
+        <entry key="$PROJECT_DIR$/../addressbook-web-test1" value="1476734698224" />
         <entry key="$PROJECT_DIR$/../sandbox" value="1474197410000" />
       </map>
     </option>
@@ -736,7 +734,6 @@
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/model/GroupData.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-test1/build.gradle" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/model/Groups.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/GroupCreationTests.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/GroupDeletionTests.java" />
@@ -753,6 +750,7 @@
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactCreationTests.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/model/ContactData.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/HelperBase.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-test1/build.gradle" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/generators/GroupDataGenerator.java" />
       </list>
     </option>
@@ -1007,7 +1005,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="ru.web.adressbook.generators.GroupDataGenerator" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="10 src/test/resources/groups.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-c 20 -f src/test/resources/groups.csv" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../addressbook-web-test1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1667,13 +1665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/util/function/ToIntFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1718,6 +1709,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1725,6 +1717,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1841,7 +1834,7 @@
         <state relative-caret-position="-49">
           <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1851,7 +1844,7 @@
         <state relative-caret-position="104">
           <caret line="23" column="244" selection-start-line="23" selection-start-column="244" selection-end-line="23" selection-end-column="244" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1925,21 +1918,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/generators/GroupDataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="-121">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1053#1064#0" expanded="true" />
+            <element signature="e#1715#1726#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/resources/groups.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding />
         </state>
       </provider>

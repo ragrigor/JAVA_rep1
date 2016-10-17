@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.beust:jcommander:1.58">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.58/f87aedf052aa17fa6d2557e5cc680a70bc6211f/jcommander-1.58.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.58/bae92eb8c2c3d8ff385157460b0a9221692fa29b/jcommander-1.58-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
