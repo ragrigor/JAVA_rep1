@@ -38,6 +38,7 @@ public class ContactHelper extends HelperBase {
         bMonth.selectByVisibleText(contactData.getaMonth());
 
         type(By.name("ayear"), contactData.getaYear());
+        attach(By.name("photo"), contactData.getPhoto());
 
         // Select selectBDay1 = new Select(By.xpath("//div[@id='content']/form/select[3]//option[" + index + "]")
         //type(By.xpath("//div[@id='content']/form/select[3]//option[3]"), null);
