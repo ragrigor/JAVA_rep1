@@ -20,8 +20,11 @@ public class ContactData {
     private  String phone1;
     private  String phone2;
     private  String phone3;
+    @Expose
     private  String aDay;
+    @Expose
     private  String aMonth;
+    @Expose
     private  String aYear;
     private  String allPhones;
     private  String allMails;

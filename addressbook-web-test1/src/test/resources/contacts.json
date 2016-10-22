@@ -4,20 +4,29 @@
     "lastName": "LastName0",
     "address": "testStreet house0",
     "mail1": "test0@gmail.com",
-    "phone1": "123-123-0"
+    "phone1": "123-123-0",
+    "aDay": "6",
+    "aMonth": "February",
+    "aYear": "2012"
   },
   {
     "firstName": "FirstName1",
     "lastName": "LastName1",
     "address": "testStreet house1",
     "mail1": "test1@gmail.com",
-    "phone1": "123-123-1"
+    "phone1": "123-123-1",
+    "aDay": "6",
+    "aMonth": "February",
+    "aYear": "2012"
   },
   {
     "firstName": "FirstName2",
     "lastName": "LastName2",
     "address": "testStreet house2",
     "mail1": "test2@gmail.com",
-    "phone1": "123-123-2"
+    "phone1": "123-123-2",
+    "aDay": "6",
+    "aMonth": "February",
+    "aYear": "2012"
   }
 ]
