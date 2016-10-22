@@ -1,15 +1,22 @@
 package ru.web.adressbook.model;
 
+import com.google.gson.annotations.Expose;
+
 import java.io.File;
 
 public class ContactData {
     private  int id = Integer.MAX_VALUE;
+    @Expose
     private  String firstName;
+    @Expose
     private  String lastName;
+    @Expose
     private  String address;
+    @Expose
     private  String mail1;
     private  String mail2;
     private  String mail3;
+    @Expose
     private  String phone1;
     private  String phone2;
     private  String phone3;
