@@ -61,20 +61,18 @@ public class GroupDataGenerator {
        // xstream.alias("group", GroupData.class);
         xstream.processAnnotations(GroupData.class);
         String xml = xstream.toXML(groups);
-        Writer writer  = new FileWriter(file);
-        writer.write(xml);
-        writer.close();
-
+        try(Writer writer  = new FileWriter(file)){
+            writer.write(xml);
+        }
     }
 
     private static void saveAsCsv(List<GroupData> groups, File file) throws IOException {
         //System.out.println(new File(".").getAbsoluteFile());
-        Writer writer  = new FileWriter(file);
-        for(GroupData group: groups){
-            writer.write(String.format("%s;%s;%s\n", group.getName1(), group.getHeader(), group.getFooter()));
+        try(Writer writer  = new FileWriter(file)){
+            for(GroupData group: groups){
+                writer.write(String.format("%s;%s;%s\n", group.getName1(), group.getHeader(), group.getFooter()));
+            }
         }
-        writer.close();
-
     }
 
     private static List<GroupData> generateGroups(int count) {

@@ -66,10 +66,9 @@ public class ContactDataGenerator {
     private static void saveAsJson(List<ContactData> contacts, File file) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
         String json = gson.toJson(contacts);
-        Writer writer  = new FileWriter(file);
-        writer.write (json);
-        writer.close();
-
+        try (Writer writer  = new FileWriter(file)){
+            writer.write (json);
+        }
     }
 
     private static List<ContactData> generateContacts(int count) {
