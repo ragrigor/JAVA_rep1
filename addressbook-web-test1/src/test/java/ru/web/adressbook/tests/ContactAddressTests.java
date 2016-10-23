@@ -32,7 +32,7 @@ public class ContactAddressTests extends TestBase {
         ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
 
 
-        assertThat(contact.getAddress(), equalTo(mergeAddress(contactInfoFromEditForm)));
+        assertThat(cleaned(contact.getAddress()), equalTo(mergeAddress(contactInfoFromEditForm)));
 
     }
 
