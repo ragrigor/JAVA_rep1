@@ -2,13 +2,28 @@ package ru.web.adressbook.model;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @XStreamAlias("group")
+@Entity
+@Table(name="group_list")
 public class GroupData {
     @XStreamOmitField
-    private int id = Integer.MAX_VALUE;;
+    @Id
+    @Column(name="group_id")
+    private int id = Integer.MAX_VALUE;
+    @Column(name="group_name")
     private  String name1;
+    @Column(name="group_header")
+    @Type(type="text")
     private  String header;
+    @Column(name="group_footer")
+    @Type(type="text")
     private  String footer;
 
 
