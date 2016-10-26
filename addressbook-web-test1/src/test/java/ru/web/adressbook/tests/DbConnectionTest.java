@@ -1,10 +1,10 @@
 package ru.web.adressbook.tests;
 
 import org.testng.annotations.Test;
+import ru.web.adressbook.model.GroupData;
+import ru.web.adressbook.model.Groups;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * Created by Радочка on 25.10.2016.
@@ -17,7 +17,20 @@ public class DbConnectionTest {
         Connection conn = null;
         try {
             conn =
-                    DriverManager.getConnection("jdbc:mysql://localhost/addressbook?user=root&password=");
+                    DriverManager.getConnection("jdbc:mysql://localhost/addressbook?serverTimezone=UTC&user=root&password=");
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery("select group_id, group_name, group_header, group_footer from group_list");
+            Groups groups = new Groups();
+            while(rs.next()){
+                groups.add(new GroupData().withId(rs.getInt("group_id")).withName1(rs.getString("group_name"))
+                        .withHeader(rs.getString("group_header")).withFooter(rs.getString("group_footer")));
+            }
+
+            rs.close();
+            st.close();
+            conn.close();
+
+            System.out.println(groups);
 
             // Do something with the Connection
 
