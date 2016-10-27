@@ -30,7 +30,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("home"), contactData.getPhone1());
         type(By.name("mobile"), contactData.getPhone2());
         type(By.name("work"), contactData.getPhone3());
-
+/*
         Select bDay = new Select(wd.findElement(By.xpath("//div[@id='content']/form/select[3]")));
         bDay.selectByVisibleText(contactData.getaDay());
 
@@ -38,7 +38,7 @@ public class ContactHelper extends HelperBase {
         bMonth.selectByVisibleText(contactData.getaMonth());
 
         type(By.name("ayear"), contactData.getaYear());
-        attach(By.name("photo"), contactData.getPhoto());
+        attach(By.name("photo"), contactData.getPhoto());    */
 
         // Select selectBDay1 = new Select(By.xpath("//div[@id='content']/form/select[3]//option[" + index + "]")
         //type(By.xpath("//div[@id='content']/form/select[3]//option[3]"), null);
@@ -198,7 +198,7 @@ public class ContactHelper extends HelperBase {
         wd.navigate().back();
         return new ContactData().withId(contact.getId()).withFirstName(firstName)
                 .withLastName(lastName).withAddress(address).withMail1(email).withMail2(email2).withMail3(email3)
-                .withPhone1(homePhone).withPhone2(mobilePhone).withPhone3(workPhone).withADay(aDay).withAMonth(aMonth).withAYear(aYear);
+                .withPhone1(homePhone).withPhone2(mobilePhone).withPhone3(workPhone);
     }
 
     public ContactData infoFromProfileFrom(ContactData contact) {

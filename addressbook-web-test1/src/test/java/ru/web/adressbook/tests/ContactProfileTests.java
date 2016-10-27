@@ -16,7 +16,7 @@ public class ContactProfileTests extends TestBase {
     public void ensurePreconditions() {
         app.goTo().contactPage();
         if (app.contact().all().size() == 0){
-            app.contact().create(new ContactData().withFirstName("eeeTest2").withAddress("2 TestStreet ").withMail1("test22@gmail.com").withPhone1("456-444").withPhone2("456-555").withPhone3("456-666").withADay("6").withAMonth("February").withAYear("2012"));
+            app.contact().create(new ContactData().withFirstName("eeeTest2").withAddress("2 TestStreet ").withMail1("test22@gmail.com").withPhone1("456-444").withPhone2("456-555").withPhone3("456-666"));
         }
     }
 
@@ -39,9 +39,7 @@ public class ContactProfileTests extends TestBase {
     private String mergeEditDetails(ContactData contact) {
         return Arrays.asList(contact.getFirstName(), contact.getLastName(), contact.getAddress(),
                 contact.getPhone1(), contact.getPhone2(), contact.getPhone3(),
-                contact.getMail1(), contact.getMail2(), contact.getMail3(),
-                contact.getaDay(), contact.getaMonth(), contact.getaYear())
-                .stream().filter((s)  -> s != null && ! s.equals("")).map(ContactProfileTests::cleaned)
+                contact.getMail1(), contact.getMail2(), contact.getMail3()).stream().filter((s)  -> s != null && ! s.equals("")).map(ContactProfileTests::cleaned)
                 .collect(Collectors.joining(""));
     }
     private String mergeProfileDetails(ContactData contact){
