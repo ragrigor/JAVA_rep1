@@ -1,35 +1,74 @@
 package ru.web.adressbook.model;
 
 import com.google.gson.annotations.Expose;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.io.File;
-
+@Entity
+@Table(name="addressbook")
 public class ContactData {
+    @Id
     private  int id = Integer.MAX_VALUE;
     @Expose
     private  String firstName;
     @Expose
     private  String lastName;
     @Expose
+    @Type(type ="text")
     private  String address;
     @Expose
+    @Column(name = "email")
+    @Type(type ="text")
     private  String mail1;
+    @Column(name = "email2")
+    @Type(type ="text")
     private  String mail2;
+    @Column(name = "email3")
+    @Type(type ="text")
     private  String mail3;
     @Expose
+    @Column(name = "home")
+    @Type(type ="text")
     private  String phone1;
+    @Column(name = "mobile")
+    @Type(type ="text")
     private  String phone2;
+    @Column(name = "work")
+    @Type(type ="text")
     private  String phone3;
+   /*
     @Expose
+    @Column(name = "aday")
+    @Type(type ="byte")
     private  String aDay;
     @Expose
+    @Column(name = "amonth")
     private  String aMonth;
     @Expose
+    @Column(name = "ayear")
     private  String aYear;
+   */
+
+    @Transient
     private  String allPhones;
+    @Transient
     private  String allMails;
+    @Transient
     private  String allDetails;
-    private File photo;
+    @Transient
+    @Column(name = "photo")
+    private String photo;
+
+    public File getPhoto() {
+        return new File(photo);
+    }
+
+    public ContactData withPhoto(File photo) {
+        this.photo = photo.getPath();
+        return this;
+
+    /* private File photo;
 
     public File getPhoto() {
         return photo;
@@ -37,7 +76,7 @@ public class ContactData {
 
     public ContactData withPhoto(File photo) {
         this.photo = photo;
-        return this;
+        return this;  */
     }
 
     public String getAllDetails() {
@@ -159,7 +198,7 @@ public class ContactData {
         this.phone3 = phone3;
         return this;
     }
-
+/*
     public ContactData withADay(String aDay) {
         this.aDay = aDay;
         return this;
@@ -174,7 +213,7 @@ public class ContactData {
         this.aYear = aYear;
         return this;
     }
-
+*/
     public String getFirstName() {
         return firstName;
     }
@@ -207,7 +246,7 @@ public class ContactData {
         return phone3;
     }
 
-    public String getaDay() {
+   /* public String getaDay() {
         return aDay;
     }
 
@@ -218,6 +257,7 @@ public class ContactData {
     public String getaYear() {
         return aYear;
     }
+    */
 
     @Override
     public String toString() {
