@@ -27,7 +27,7 @@ public class ContactCreationTests extends TestBase {
     @DataProvider
     public Iterator<Object[]> validContactsFromJson() throws IOException {
         List<Object[]> list = new ArrayList<Object[]>();
-        try(BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.json")))){
+        try(BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contactsFullInfo.json")))){
             String json = "";
             String line = reader.readLine();
             while( line != null) {
@@ -41,19 +41,30 @@ public class ContactCreationTests extends TestBase {
     }
 
 
-    @Test (dataProvider = "validContactsFromJson")
+   /* @Test (dataProvider = "validContactsFromJson")
     public void testContactCreation(ContactData contact) {
         app.goTo().contactPage();
         Contacts before = app.contact().all();
         File photo = new File("src/test/resources/sample.png");
-        /* ContactData contact = new ContactData().withFirstName("Test1").withAddress("2 TestStreet ")
+        ContactData contact = new ContactData().withFirstName("Test1").withAddress("2 TestStreet ")
                 .withMail1("test22@gmail.com")
                 .withPhone1("456-444").withPhone2("456-555").withPhone3("456-666")
                 .withADay("6").withAMonth("February").withAYear("2012")
-                .withPhoto(photo);  */
+                .withPhoto(photo);
         app.contact().create(contact);
         Contacts after = app.contact().all();
+        assertEquals(after.size(), before.size() + 1);   */
+
+    @Test (dataProvider = "validContactsFromJson")
+    public void testContactCreation(ContactData contact) {
+
+        Contacts before = app.db().contacts();
+        File photo = new File("src/test/resources/sample.png");
+        app.goTo().contactPage();
+        app.contact().create(contact);
+        Contacts after = app.db().contacts();
         assertEquals(after.size(), before.size() + 1);
+
 
      /*   int max = 0;
         for (ContactData c : after){
