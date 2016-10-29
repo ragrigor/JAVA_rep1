@@ -54,10 +54,12 @@ public class GroupCreationTests extends TestBase {
         //String [] names = new String[] {"test1", "test2", "test3"};
        // for(String name : names ){
            // GroupData group = new GroupData().withName1(name).withHeader(header).withFooter(footer); //.withHeader("test2").withFooter("test22");
+            //Groups before = app.group().all();  if the list is taken from UI
+            Groups before = app.db().groups();
             app.goTo().groupPage();
-            Groups before = app.group().all();
             app.group().create(group);
-            Groups after = app.group().all();
+            Groups after = app.db().groups();
+           // Groups after = app.group().all();   if the list is taken from UI
             assertThat(after.size(), equalTo(before.size() +1));
             assertThat(after, equalTo(
                     before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));

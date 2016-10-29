@@ -12,9 +12,16 @@ import static org.testng.Assert.assertEquals;
 public class GroupDeletionTests extends TestBase {
 
     @BeforeMethod
-    public void ensurePreconditions() {
+    //check in UI
+   /* public void ensurePreconditions() {
         app.goTo().groupPage();
         if (app.group().all().size() == 0) {
+            app.group().create(new GroupData().withName1("group3").withFooter("test2"));
+        }
+    }      */
+    public void ensurePreconditions() {
+        if(app.db().groups().size() == 0){
+            app.goTo().groupPage();
             app.group().create(new GroupData().withName1("group3").withFooter("test2"));
         }
     }
@@ -22,11 +29,14 @@ public class GroupDeletionTests extends TestBase {
     @Test
     public void testGroupDeletion() {
 
-        Groups before = app.group().all();
+       // Groups before = app.group().all();  if checked in UI
+        Groups before = app.db().groups();
         GroupData deletedGroup = before.iterator().next();
+        app.goTo().groupPage();
         app.group().delete(deletedGroup);
         app.group().returntoGroupPage();
-        Groups after = app.group().all();
+        Groups after = app.db().groups();
+       // Groups after = app.group().all();   if checked in UI
         assertEquals(after.size(), before.size() - 1);
 
         assertThat(after, equalTo(before.without(deletedGroup)));
