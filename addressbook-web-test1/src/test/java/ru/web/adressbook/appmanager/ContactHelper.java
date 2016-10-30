@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.web.adressbook.model.ContactData;
 import ru.web.adressbook.model.Contacts;
+import ru.web.adressbook.model.GroupData;
 
 import java.util.List;
 
@@ -43,6 +44,10 @@ public class ContactHelper extends HelperBase {
               Assert.assertFalse(isElementPresent(By.name("new_group")));
           }
     }
+    public void selectGroupFromList (GroupData group){
+        new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(group.getName1());
+    }
+
     //
     //    }
     //    else{
@@ -250,5 +255,9 @@ public class ContactHelper extends HelperBase {
         String allDetails = wd.findElement(By.id("content")).getText();
         wd.navigate().back();
         return new ContactData().withAllDetails(allDetails);
+    }
+
+    public void submitAddingToGroup() {
+        click(By.name("add"));
     }
 }
