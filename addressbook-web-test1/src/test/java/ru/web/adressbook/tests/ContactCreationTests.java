@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import ru.web.adressbook.model.ContactData;
 import ru.web.adressbook.model.Contacts;
 import ru.web.adressbook.model.GroupData;
+import ru.web.adressbook.model.Groups;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -58,9 +59,12 @@ public class ContactCreationTests extends TestBase {
     @Test (dataProvider = "validContactsFromJson")
     public void testContactCreation(ContactData contact) {
         Contacts before = app.db().contacts();
+        Groups groups = app.db().groups();
         File photo = new File("src/test/resources/sample.png");
+        app.contact().create(contact.withPhoto(photo).inGroup(groups.iterator().next()));
+        //ContactData newContact = new ContactData().withPhoto(photo).inGroup(groups.iterator().next());
         app.goTo().contactPage();
-        app.contact().create(contact);
+       // app.contact().create(newContact);
         Contacts after = app.db().contacts();
         assertEquals(after.size(), before.size() + 1);
         assertThat(after, equalTo(before.withAdded(contact.withId(after.stream()

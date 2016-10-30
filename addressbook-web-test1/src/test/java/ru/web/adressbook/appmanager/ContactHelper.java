@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import ru.web.adressbook.model.ContactData;
 import ru.web.adressbook.model.Contacts;
 
@@ -31,6 +32,22 @@ public class ContactHelper extends HelperBase {
         type(By.name("home"), contactData.getPhone1());
         type(By.name("mobile"), contactData.getPhone2());
         type(By.name("work"), contactData.getPhone3());
+        attach(By.name("photo"), contactData.getPhoto());
+
+          if(contactData.getGroups().size()>0){
+              Assert.assertTrue(contactData.getGroups().size() == 1);
+              new Select(wd.findElement(By.name("new_group")))
+                      .selectByVisibleText(contactData.getGroups().iterator().next().getName1());
+          }
+          else{
+              Assert.assertFalse(isElementPresent(By.name("new_group")));
+          }
+    }
+    //
+    //    }
+    //    else{
+    //        Assert.assertFalse(isElementPresent(By.name("new_group")));
+    //    }
 /*
         Select bDay = new Select(wd.findElement(By.xpath("//div[@id='content']/form/select[3]")));
         bDay.selectByVisibleText(contactData.getaDay());
@@ -39,7 +56,7 @@ public class ContactHelper extends HelperBase {
         bMonth.selectByVisibleText(contactData.getaMonth());
 
         type(By.name("ayear"), contactData.getaYear());
-        attach(By.name("photo"), contactData.getPhoto());    */
+          */
 
         // Select selectBDay1 = new Select(By.xpath("//div[@id='content']/form/select[3]//option[" + index + "]")
         //type(By.xpath("//div[@id='content']/form/select[3]//option[3]"), null);
@@ -50,7 +67,7 @@ public class ContactHelper extends HelperBase {
             //wd.findElements(By.name("entry")).get(index).findElements(By.tagName("td")).get(index).findElement(By.tagName("a")).click();
         }  */
 
-    }
+
 
 
     public void submitContactCreation() {
