@@ -181,6 +181,32 @@ public class ContactHelper extends HelperBase {
         }
         return contactCache;
     }
+    public Contacts allShortened() {
+        if (contactCache != null) {
+            return new Contacts(contactCache);
+        }
+        contactCache = new Contacts();
+        List<WebElement> rows = wd.findElements(By.name("entry"));
+        for (WebElement row : rows) {
+            List<WebElement> cells = row.findElements(By.tagName("td"));
+            String firstName = cells.get(2).getText();
+            String lastName = cells.get(1).getText();
+            String address = cells.get(3).getText();
+           // String[] phones = cells.get(5).getText().split("\n");
+           // String[] mails = cells.get(4).getText().split("\n");
+            int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
+            ContactData contact = new ContactData().withId(id)
+                    .withFirstName(firstName).withLastName(lastName).withAddress(address);
+           /*  ContactData contact = new ContactData().withId(id).withFirstName(firstName).withLastName(lastName)
+                     .withAddress(address).withMail1(mails[0]).withMail2(mails[1]).withMail3(mails[2])
+                     .withPhone1(phones[0]).withPhone2(phones[1]).withPhone3(phones[2]);   all split   */
+           // ContactData contact = new ContactData().withId(id).withFirstName(firstName).withLastName(lastName)
+            //        .withAddress(address).withAllMails(allMails).withAllPhones(allPhones);
+            contactCache.add(contact);
+        }
+        return contactCache;
+    }
+
 
     public ContactData infoFromEditForm(ContactData contact) {
         initContactModification(contact.getId());
