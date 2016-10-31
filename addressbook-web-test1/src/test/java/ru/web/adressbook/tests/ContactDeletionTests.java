@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 import ru.web.adressbook.model.ContactData;
 import ru.web.adressbook.model.Contacts;
 
+import java.io.File;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -13,9 +15,10 @@ public class ContactDeletionTests extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
         if(app.db().contacts().size() == 0){
-            app.contact().create(new ContactData().withFirstName("M_test").withAddress("2 TestStreet")
+            File photo = new File("src/test/resources/sample.png");
+            app.contact().create(new ContactData().withFirstName("NO_test").withAddress("2 TestStreet")
                     .withMail1("test22@gmail.com").withMail2("test22@gmail.com").withMail2("test22@gmail.com")
-                    .withPhone1("456-444").withPhone2("456-555").withPhone3("456-666"));
+                    .withPhone1("456-444").withPhone2("456-555").withPhone3("456-666").withPhoto(photo));
         }
         app.goTo().contactPage();
     }

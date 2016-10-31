@@ -8,6 +8,7 @@ import org.testng.Assert;
 import ru.web.adressbook.model.ContactData;
 import ru.web.adressbook.model.Contacts;
 import ru.web.adressbook.model.GroupData;
+import ru.web.adressbook.model.Groups;
 
 import java.util.List;
 
@@ -41,7 +42,7 @@ public class ContactHelper extends HelperBase {
                       .selectByVisibleText(contactData.getGroups().iterator().next().getName1());
           }
           else{
-              Assert.assertFalse(isElementPresent(By.name("new_group")));
+              Assert.assertTrue(isElementPresent(By.name("new_group")));
           }
     }
     public void selectGroupFromList (GroupData group){
@@ -145,6 +146,12 @@ public class ContactHelper extends HelperBase {
         fillContactForm(contact);
         submitContactModification();
         contactCache = null;
+    }
+
+    public void addGroup(ContactData contact, GroupData group){
+        selectContactById(contact.getId());
+        selectGroupFromList(group);
+        submitAddingToGroup();
     }
 
     /*  public void delete(int index) {
