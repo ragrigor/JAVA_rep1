@@ -1,6 +1,8 @@
 package ru.web.adressbook.tests;
 
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -48,31 +50,33 @@ public class ContactAddToGroupTests extends TestBase {
         ContactData contact = before.iterator().next();
         Groups allGroups = app.db().groups();
 
+        Groups contactGroupsBefore = contact.getGroups();
+
         if (contact.getGroups().size() == 0) {                          //contact is not included into any groups
             GroupData anyGroup = allGroups.iterator().next();
             app.contact().addGroup(contact, anyGroup);
-            ContactData contactWithGroup = contact;
-            assertThat(contactWithGroup.getGroups().size(), equalTo(contact.getGroups().size()+1));
+            contactGroupsBefore.add(anyGroup);
 
-           // Assert.assertEquals(contact.getGroups().size() + 1 after);
         } else if (contact.getGroups().size() != 0 &&                   //contact is  included into one/several groups
                 contact.getGroups().size() < allGroups.size()) {
             Groups remainingGroups = app.db().groups();
             remainingGroups.removeAll(contact.getGroups());  //filter the list (only not added groups left)
             GroupData group = remainingGroups.iterator().next();
             app.contact().addGroup(contact, group);
-            ContactData contactWithGroup = contact;
-            assertThat(contactWithGroup.getGroups().size(), equalTo(contact.getGroups().size()+1));
+            contactGroupsBefore.add(group);
 
         } else {                                                       //contacts is  included into all groups,
             app.goTo().groupPage();
-            GroupData newGroup = new GroupData().withName1("group5").withHeader("test").withFooter("test"); //create new group
+            GroupData newGroup = new GroupData().withName1("group122").withHeader("test").withFooter("test"); //create new group
             app.group().create(newGroup);
             app.goTo().contactPage();
             app.contact().addGroup(contact, newGroup);
-            ContactData contactWithGroup = contact;
-            assertThat(contactWithGroup.getGroups().size(), equalTo(contact.getGroups().size()+1));
+            contactGroupsBefore.add(newGroup);
         }
+
+        Groups contactGroupsAfter = contact.getGroups();
+        assertThat(contactGroupsAfter.size(), equalTo(contactGroupsBefore.size() + 1));
+
     }
 }
 

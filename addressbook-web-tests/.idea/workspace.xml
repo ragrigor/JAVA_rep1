@@ -44,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/model/ContactData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="70" column="38" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="38" />
+              <caret line="70" column="30" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="38" />
               <folding>
                 <marker date="1477947317643" expanded="false" signature="2149:2160" ph=" { " />
                 <marker date="1477947317643" expanded="false" signature="2173:2179" ph=" }" />
@@ -58,8 +58,8 @@
       <file leaf-file-name="ContactAddToGroupTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactAddToGroupTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="205">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="76" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/ContactHelper.java">
+      <file leaf-file-name="ContactDeletionTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactDeletionTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="150" column="24" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="24" />
+            <state relative-caret-position="-187">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -80,19 +80,17 @@
       <file leaf-file-name="TestMethodWorker.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/internal/TestMethodWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
+            <state relative-caret-position="1717">
               <caret line="117" column="3" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/TestRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="637" column="0" selection-start-line="637" selection-start-column="0" selection-end-line="637" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#8549#8550#0" expanded="false" />
+                <element signature="e#8579#8580#0" expanded="false" />
+                <element signature="e#8611#8612#0" expanded="false" />
+                <element signature="e#8695#8696#0" expanded="false" />
+                <element signature="e#8987#8988#0" expanded="false" />
+                <element signature="e#9039#9040#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,7 +98,7 @@
       <file leaf-file-name="HbConnectionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/HbConnectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
+            <state relative-caret-position="459">
               <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
               <folding />
             </state>
@@ -110,33 +108,12 @@
       <file leaf-file-name="SuiteRunnerWorker.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/SuiteRunnerWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="1394">
               <caret line="93" column="24" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
               <folding>
-                <element signature="e#2713#2714#0" expanded="true" />
-                <element signature="e#2778#2779#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test-20161031T234704.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/test-20161031T234704.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30549">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SuiteRunnerMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/internal/SuiteRunnerMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="e#646#647#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3408#3409#0" expanded="false" />
+                <element signature="e#3479#3480#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -145,8 +122,38 @@
       <file leaf-file-name="ContactCreationTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
+            <state relative-caret-position="459">
               <caret line="69" column="50" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbConnectionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/DbConnectionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="19" column="83" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactModificationTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactModificationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/DbHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-23">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -808,6 +815,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files" />
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1051,11 +1063,6 @@
       <pane id="PackagesPane">
         <subPane />
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files" />
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1483,49 +1490,49 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactAddToGroupTests - 2016.10.31 at 23h 45m 00s.xml">
+    <history-entry file="ContactAddToGroupTests - 2016.11.01 at 23h 34m 06s.xml">
       <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.10.31 at 23h 55m 11s.xml">
+    <history-entry file="ContactAddToGroupTests - 2016.11.01 at 23h 35m 30s.xml">
       <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.01 at 00h 05m 03s.xml">
+    <history-entry file="ContactAddToGroupTests - 2016.11.02 at 00h 00m 46s.xml">
       <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.01 at 00h 08m 49s.xml">
+    <history-entry file="ContactAddToGroupTests - 2016.11.02 at 00h 09m 19s.xml">
       <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.01 at 00h 18m 09s.xml">
+    <history-entry file="ContactAddToGroupTests - 2016.11.02 at 00h 11m 03s.xml">
       <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.01 at 00h 45m 07s.xml">
+    <history-entry file="ContactAddToGroupTests - 2016.11.02 at 00h 16m 02s.xml">
       <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.01 at 00h 46m 25s.xml">
+    <history-entry file="ContactAddToGroupTests - 2016.11.02 at 00h 16m 38s.xml">
       <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.01 at 01h 05m 44s.xml">
-      <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HbConnectionTest - 2016.10.31 at 23h 45m 35s.xml">
+    <history-entry file="HbConnectionTest - 2016.11.02 at 00h 10m 09s.xml">
       <configuration name="HbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTest - 2016.11.01 at 00h 09m 14s.xml">
+    <history-entry file="HbConnectionTest - 2016.11.02 at 00h 11m 25s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2016.11.02 at 00h 14m 50s.xml">
       <configuration name="HbConnectionTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4037855" sideWeight="0.48813057" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12274959" sideWeight="0.25642964" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46972176" sideWeight="0.11043873" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12274959" sideWeight="0.7435703" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46972176" sideWeight="0.8895613" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28290468" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -1659,7 +1666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-33">
           <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1724,13 +1730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/DbHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1812,8 +1811,8 @@
         <state relative-caret-position="165">
           <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <element signature="e#2098#2099#0" expanded="true" />
-            <element signature="e#2136#2137#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="false" />
+            <element signature="e#2136#2137#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1822,15 +1821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/DbConnectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="83" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1846,7 +1836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1854,15 +1843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactDeletionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1874,19 +1854,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactModificationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/generators/ContactDataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1921,7 +1892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1929,9 +1899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="1188" column="0" selection-start-line="1188" selection-start-column="0" selection-end-line="1188" selection-end-column="0" />
-          <folding>
-            <element signature="e#26929#26942#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1939,7 +1906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1947,25 +1913,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
-          <folding>
-            <element signature="e#7188#7189#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/internal/SuiteRunnerMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
+        <state relative-caret-position="289">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#646#647#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#686#687#0" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/test-20161031T234704.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30549">
+        <state relative-caret-position="136">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding />
         </state>
@@ -1973,7 +1938,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/ContactHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="2210">
           <caret line="150" column="24" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="24" />
           <folding />
         </state>
@@ -1981,51 +1946,148 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="9588">
           <caret line="637" column="0" selection-start-line="637" selection-start-column="0" selection-end-line="637" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#8569#8570#0" expanded="false" />
+            <element signature="e#8595#8596#0" expanded="false" />
+            <element signature="e#8647#8648#0" expanded="false" />
+            <element signature="e#8684#8685#0" expanded="false" />
+            <element signature="e#8735#8736#0" expanded="false" />
+            <element signature="e#8771#8772#0" expanded="false" />
+            <element signature="e#8835#8836#0" expanded="false" />
+            <element signature="e#8874#8875#0" expanded="false" />
+            <element signature="e#8937#8938#0" expanded="false" />
+            <element signature="e#8975#8976#0" expanded="false" />
+            <element signature="e#21144#21145#0" expanded="false" />
+            <element signature="e#21180#21181#0" expanded="false" />
+            <element signature="e#21222#21223#0" expanded="false" />
+            <element signature="e#21249#21250#0" expanded="false" />
+            <element signature="e#21611#21612#0" expanded="false" />
+            <element signature="e#21655#21656#0" expanded="false" />
+            <element signature="e#25409#25410#0" expanded="false" />
+            <element signature="e#25435#25436#0" expanded="false" />
+            <element signature="e#26303#26304#0" expanded="false" />
+            <element signature="e#26369#26370#0" expanded="false" />
+            <element signature="e#26646#26647#0" expanded="false" />
+            <element signature="e#26706#26707#0" expanded="false" />
+            <element signature="e#38396#38397#0" expanded="false" />
+            <element signature="e#38456#38457#0" expanded="false" />
+            <element signature="e#43131#43132#0" expanded="false" />
+            <element signature="e#43189#43190#0" expanded="false" />
+            <element signature="e#45605#45606#0" expanded="false" />
+            <element signature="e#45632#45633#0" expanded="false" />
+            <element signature="e#45724#45725#0" expanded="false" />
+            <element signature="e#45752#45753#0" expanded="false" />
+            <element signature="e#45840#45841#0" expanded="false" />
+            <element signature="e#45866#45867#0" expanded="false" />
+            <element signature="e#45918#45919#0" expanded="false" />
+            <element signature="e#45948#45949#0" expanded="false" />
+            <element signature="e#46001#46002#0" expanded="false" />
+            <element signature="e#46032#46033#0" expanded="false" />
+            <element signature="e#46084#46085#0" expanded="false" />
+            <element signature="e#46114#46115#0" expanded="false" />
+            <element signature="e#46192#46193#0" expanded="false" />
+            <element signature="e#46248#46249#0" expanded="false" />
+            <element signature="e#46726#46727#0" expanded="false" />
+            <element signature="e#46760#46761#0" expanded="false" />
+            <element signature="e#46846#46847#0" expanded="false" />
+            <element signature="e#46870#46871#0" expanded="false" />
+            <element signature="e#46930#46931#0" expanded="false" />
+            <element signature="e#46963#46964#0" expanded="false" />
+            <element signature="e#47005#47006#0" expanded="false" />
+            <element signature="e#47028#47029#0" expanded="false" />
+            <element signature="e#47413#47414#0" expanded="false" />
+            <element signature="e#47452#47453#0" expanded="false" />
+            <element signature="e#47585#47586#0" expanded="false" />
+            <element signature="e#47624#47625#0" expanded="false" />
+            <element signature="e#47759#47760#0" expanded="false" />
+            <element signature="e#47799#47800#0" expanded="false" />
+            <element signature="e#47947#47948#0" expanded="false" />
+            <element signature="e#47988#47989#0" expanded="false" />
+            <element signature="e#48062#48063#0" expanded="false" />
+            <element signature="e#48107#48108#0" expanded="false" />
+            <element signature="e#48181#48182#0" expanded="false" />
+            <element signature="e#48226#48227#0" expanded="false" />
+            <element signature="e#48301#48302#0" expanded="false" />
+            <element signature="e#48347#48348#0" expanded="false" />
+            <element signature="e#48425#48426#0" expanded="false" />
+            <element signature="e#48467#48468#0" expanded="false" />
+            <element signature="e#49069#49070#0" expanded="false" />
+            <element signature="e#49095#49096#0" expanded="false" />
+            <element signature="e#49158#49159#0" expanded="false" />
+            <element signature="e#49190#49191#0" expanded="false" />
+            <element signature="e#50180#50181#0" expanded="false" />
+            <element signature="e#50223#50224#0" expanded="false" />
+            <element signature="e#50259#50260#0" expanded="false" />
+            <element signature="e#50285#50286#0" expanded="false" />
+            <element signature="e#50320#50321#0" expanded="false" />
+            <element signature="e#50343#50344#0" expanded="false" />
+            <element signature="e#50375#50376#0" expanded="false" />
+            <element signature="e#50414#50415#0" expanded="false" />
+            <element signature="e#50870#50871#0" expanded="false" />
+            <element signature="e#50903#50904#0" expanded="false" />
+            <element signature="e#50956#50957#0" expanded="false" />
+            <element signature="e#50990#50991#0" expanded="false" />
+            <element signature="e#51053#51054#0" expanded="false" />
+            <element signature="e#51096#51097#0" expanded="false" />
+            <element signature="e#52361#52362#0" expanded="false" />
+            <element signature="e#52429#52430#0" expanded="false" />
+            <element signature="e#52499#52500#0" expanded="false" />
+            <element signature="e#52568#52569#0" expanded="false" />
+            <element signature="e#52641#52642#0" expanded="false" />
+            <element signature="e#52709#52710#0" expanded="false" />
+            <element signature="e#53035#53036#0" expanded="false" />
+            <element signature="e#53061#53062#0" expanded="false" />
+            <element signature="e#53174#53175#0" expanded="false" />
+            <element signature="e#53222#53223#0" expanded="false" />
+            <element signature="e#53291#53292#0" expanded="false" />
+            <element signature="e#53339#53340#0" expanded="false" />
+            <element signature="e#53395#53396#0" expanded="false" />
+            <element signature="e#53444#53445#0" expanded="false" />
+            <element signature="e#53504#53505#0" expanded="false" />
+            <element signature="e#53555#53556#0" expanded="false" />
+            <element signature="e#53886#53887#0" expanded="false" />
+            <element signature="e#53927#53928#0" expanded="false" />
+            <element signature="e#54074#54075#0" expanded="false" />
+            <element signature="e#54124#54125#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/internal/TestMethodWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
+        <state relative-caret-position="1717">
           <caret line="117" column="3" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#8549#8550#0" expanded="false" />
+            <element signature="e#8579#8580#0" expanded="false" />
+            <element signature="e#8611#8612#0" expanded="false" />
+            <element signature="e#8695#8696#0" expanded="false" />
+            <element signature="e#8987#8988#0" expanded="false" />
+            <element signature="e#9039#9040#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/SuiteRunnerWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="1394">
           <caret line="93" column="24" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
           <folding>
-            <element signature="e#2713#2714#0" expanded="true" />
-            <element signature="e#2778#2779#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3408#3409#0" expanded="false" />
+            <element signature="e#3479#3480#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="69" column="50" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/HbConnectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/model/ContactData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="70" column="38" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="38" />
+          <caret line="70" column="30" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="38" />
           <folding>
             <marker date="1477947317643" expanded="false" signature="2149:2160" ph=" { " />
             <marker date="1477947317643" expanded="false" signature="2173:2179" ph=" }" />
@@ -2035,10 +2097,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/DbConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="19" column="83" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactModificationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/DbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactDeletionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="69" column="50" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/HbConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactAddToGroupTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state relative-caret-position="205">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="76" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
