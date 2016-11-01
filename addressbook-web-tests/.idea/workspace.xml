@@ -55,11 +55,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactAddToGroupTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContactAddToGroupTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactAddToGroupTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="205">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="76" selection-end-column="56" />
+              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/ContactHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="284" column="5" selection-start-line="284" selection-start-column="5" selection-end-line="284" selection-end-column="5" />
+              <folding>
+                <element signature="e#11408#11409#0" expanded="true" />
+                <element signature="e#11445#11446#0" expanded="true" />
+                <element signature="e#11491#11492#0" expanded="true" />
+                <element signature="e#11531#11532#0" expanded="true" />
+                <element signature="e#11710#11711#0" expanded="true" />
+                <element signature="e#11799#11800#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactDeleteFromGroupTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactDeleteFromGroupTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,44 +106,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestMethodWorker.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/internal/TestMethodWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="117" column="3" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#8549#8550#0" expanded="false" />
-                <element signature="e#8579#8580#0" expanded="false" />
-                <element signature="e#8611#8612#0" expanded="false" />
-                <element signature="e#8695#8696#0" expanded="false" />
-                <element signature="e#8987#8988#0" expanded="false" />
-                <element signature="e#9039#9040#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HbConnectionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/HbConnectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
               <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SuiteRunnerWorker.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/SuiteRunnerWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="93" column="24" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#3408#3409#0" expanded="false" />
-                <element signature="e#3479#3480#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -723,7 +720,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/ContactData.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/GroupData.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/ContactCreationTests.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/GroupCreationTests.java" />
@@ -772,8 +768,9 @@
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactAddToGroup.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactDeletionTests.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/model/ContactData.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/ContactHelper.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactAddToGroupTests.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/ContactHelper.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactDeleteFromGroupTests.java" />
       </list>
     </option>
   </component>
@@ -1084,40 +1081,7 @@
       <recent name="C:\my_JAVA\JAVA_rep1\addressbook-web-test1\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactAddToGroupTests">
-    <configuration default="false" name="ContactModificationTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.web.adressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="addressbook-web-test1_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="ru.web.adressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.web.adressbook.tests.ContactModificationTests" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea -DverifyUI=true" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../addressbook-web-test1" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.ContactDeleteFromGroupTests">
     <configuration default="false" name="ContactCreationTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1230,6 +1194,39 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="ru.web.adressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="ru.web.adressbook.tests.ContactDeletionTests" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../addressbook-web-test1" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="ContactDeleteFromGroupTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.web.adressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="addressbook-web-test1_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="ru.web.adressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.web.adressbook.tests.ContactDeleteFromGroupTests" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -1457,19 +1454,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.ContactModificationTests" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.ContactCreationTests" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.HbConnectionTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.ContactAddToGroupTests" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.ContactDeletionTests" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.ContactCreationTests" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.HbConnectionTest" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.ContactAddToGroupTests" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.ContactDeletionTests" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.ContactDeleteFromGroupTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.ContactAddToGroupTests" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.ContactDeleteFromGroupTests" />
         <item index="1" class="java.lang.String" itemvalue="TestNG.HbConnectionTest" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.ContactDeletionTests" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.ContactCreationTests" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.ContactModificationTests" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.ContactAddToGroupTests" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.ContactDeletionTests" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.ContactCreationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -1490,34 +1487,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactAddToGroupTests - 2016.11.01 at 23h 34m 06s.xml">
-      <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
+    <history-entry file="ContactDeleteFromGroupTests - 2016.11.02 at 00h 47m 00s.xml">
+      <configuration name="ContactDeleteFromGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.01 at 23h 35m 30s.xml">
-      <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
+    <history-entry file="ContactDeleteFromGroupTests - 2016.11.02 at 00h 47m 39s.xml">
+      <configuration name="ContactDeleteFromGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.02 at 00h 00m 46s.xml">
-      <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
+    <history-entry file="ContactDeleteFromGroupTests - 2016.11.02 at 00h 49m 54s.xml">
+      <configuration name="ContactDeleteFromGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.02 at 00h 09m 19s.xml">
-      <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
+    <history-entry file="ContactDeleteFromGroupTests - 2016.11.02 at 01h 16m 48s.xml">
+      <configuration name="ContactDeleteFromGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.02 at 00h 11m 03s.xml">
-      <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
+    <history-entry file="ContactDeleteFromGroupTests - 2016.11.02 at 01h 20m 26s.xml">
+      <configuration name="ContactDeleteFromGroupTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.02 at 00h 16m 02s.xml">
-      <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactAddToGroupTests - 2016.11.02 at 00h 16m 38s.xml">
-      <configuration name="ContactAddToGroupTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HbConnectionTest - 2016.11.02 at 00h 10m 09s.xml">
+    <history-entry file="HbConnectionTest - 2016.11.02 at 00h 47m 17s.xml">
       <configuration name="HbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTest - 2016.11.02 at 00h 11m 25s.xml">
+    <history-entry file="HbConnectionTest - 2016.11.02 at 00h 48m 14s.xml">
       <configuration name="HbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTest - 2016.11.02 at 00h 14m 50s.xml">
+    <history-entry file="HbConnectionTest - 2016.11.02 at 01h 08m 29s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2016.11.02 at 01h 16m 16s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2016.11.02 at 01h 17m 32s.xml">
       <configuration name="HbConnectionTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1529,10 +1526,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4037855" sideWeight="0.48813057" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46972176" sideWeight="0.11043873" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45826513" sideWeight="0.11043873" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46972176" sideWeight="0.8895613" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45826513" sideWeight="0.8895613" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28290468" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -1598,7 +1595,7 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1607,13 +1604,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/test-20161024T232747.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1821,6 +1811,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1932,14 +1923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/ContactHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="150" column="24" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -2148,7 +2131,32 @@
     <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactAddToGroupTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="76" selection-end-column="56" />
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/appmanager/ContactHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="284" column="5" selection-start-line="284" selection-start-column="5" selection-end-line="284" selection-end-column="5" />
+          <folding>
+            <element signature="e#11408#11409#0" expanded="true" />
+            <element signature="e#11445#11446#0" expanded="true" />
+            <element signature="e#11491#11492#0" expanded="true" />
+            <element signature="e#11531#11532#0" expanded="true" />
+            <element signature="e#11710#11711#0" expanded="true" />
+            <element signature="e#11799#11800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-test1/src/test/java/ru/web/adressbook/tests/ContactDeleteFromGroupTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

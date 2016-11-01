@@ -154,6 +154,12 @@ public class ContactHelper extends HelperBase {
         submitAddingToGroup();
     }
 
+    public void removeGroup(ContactData contact, GroupData group){
+        sortByGroup(group);
+        selectContactById(contact.getId());
+        submitRemovingFromContact();
+    }
+
     /*  public void delete(int index) {
           selectContact(index);
           deleteSelectedContact();
@@ -266,5 +272,15 @@ public class ContactHelper extends HelperBase {
 
     public void submitAddingToGroup() {
         click(By.name("add"));
+    }
+    public void submitRemovingFromContact() {
+        click(By.name("remove"));
+    }
+
+    public void sortByGroup(GroupData group){
+        new Select(wd.findElement(By.name("group"))).selectByVisibleText(group.getName1());
+    }
+    public void sortByGroupAll(){
+        new Select(wd.findElement(By.name("group"))).selectByVisibleText("[all]");
     }
 }
