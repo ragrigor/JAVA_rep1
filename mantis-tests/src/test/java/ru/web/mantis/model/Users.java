@@ -10,22 +10,22 @@ import javax.persistence.Table;
 @Table(name = "mantis_user_table")
 public class Users {
     @Id
-    @Column
+    @Column(name = "id")
     public int id;
-    @Column
+    @Column(name = "username")
     public String username;
-    @Column
+    @Column(name = "email")
     public String email;
 
-    public Users(int id, String username, String email) {
-        this.id = id;
-        this.username = username;
-        this.email = email;
-    }
+   // public Users(int id, String username, String email) {
+   //     this.id = id;
+   //     this.username = username;
+   //     this.email = email;
+   // }
 
 
-    public Users() {
-    }
+    //public Users() {
+    //}
 
     public int getId() {
         return id;

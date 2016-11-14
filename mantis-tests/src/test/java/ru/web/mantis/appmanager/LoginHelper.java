@@ -1,6 +1,7 @@
 package ru.web.mantis.appmanager;
 
 import org.openqa.selenium.By;
+import ru.web.mantis.model.Users;
 
 /**
  * Created by Радочка on 06.11.2016.
@@ -18,3 +19,10 @@ public class LoginHelper extends HelperBase {
         click(By.cssSelector("input[type='submit']"));
     }
 }
+
+  /*  public void asUser(Users user){
+        wd.get(app.getProperty("web.baseUrl") + "/login_page.php");
+        type(By.name("username"),user.getUsername());
+        type(By.name("password"), "password");
+        click(By.cssSelector("input[type='submit']"));
+    }   */

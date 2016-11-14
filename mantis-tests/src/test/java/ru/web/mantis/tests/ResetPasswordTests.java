@@ -5,6 +5,7 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -16,6 +17,7 @@ import ru.web.mantis.model.Users;
 import javax.mail.MessagingException;
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.testng.Assert.assertTrue;
 
@@ -32,19 +34,19 @@ public class ResetPasswordTests extends TestBase {
     @Test
     public void testResetPassword() throws IOException, MessagingException {
         app.login().asAdmin();
-     //   String password = "password";
+        List<Users> users = app.db().users().stream().filter((u) -> !u.getUsername().equals("administrator"))
+                .collect(Collectors.toList());
+        Users user = users.iterator().next();
+        String name = user.getUsername();
+        String email = user.getEmail();
+        String password = "password";
 
-        app.resetPassword().start();
+        app.resetPassword().start(user);
         List<MailMessage> mailMessages = app.mail().waitForMail(1, 10000);
-       // user = wd.findElement(By.cssSelector("input[id='edit-username']")).getAttribute("value");
+        // user = wd.findElement(By.cssSelector("input[id='edit-username']")).getAttribute("value");
         String confirmationLink = findConfirmationLink(mailMessages);
         app.resetPassword().finish(confirmationLink, password);
-        //assertTrue(app.newSession().login(user, password));
-
-        public void chooseUser(Users user) {
-            click(By.linkText(user.getName()));
-        }
-
+        assertTrue(app.newSession().login(user.getUsername(), password));
     }
 
     private String findConfirmationLink(List<MailMessage> mailMessages) {
